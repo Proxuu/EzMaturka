@@ -19,26 +19,26 @@
 
 2. **Rozwiązywanie zadań**  
    - Zadania są przedstawione w prosty i przejrzysty sposób.  
-   - Użytkownik wybiera poprawną odpowiedź spośród kilku podanych opcji.  
 
 3. **Podpowiedzi i rozwiązania**  
    - Dostępne są podpowiedzi prowadzące krok po kroku do rozwiązania.  
-   - Możliwość przeglądania pełnych rozwiązań z wyjaśnieniami.  
+   - Możliwość przeglądania pełnych rozwiązań z wyjaśnieniami. 
 
 4. **Panel użytkownika**  
    - Intuicyjne przyciski do poruszania się po zadaniach: "Poprzednie", "Następne".  
-   - Możliwość zaznaczania odpowiedzi i natychmiastowego sprawdzania poprawności.
+   - Możliwość natychmiastowego sprawdzania poprawności.
 
 5. **Notatnik matematyczny**  
    - Użytkownik ma dostęp do pola rysunkowego, które pozwala wykonywać obliczenia lub rysunki geometryczne.  
 
-<h2>Jak korzystać?</h2>
+<h2>Jak uruchomić projekt?</h2>
 
-1. Przejdź do strony głównej EzMaturka.  
-2. Wybierz interesującą Cię kategorię zadań z paska nawigacji.  
-3. Rozwiązuj zadania, korzystając z podpowiedzi lub rozwiązań, jeśli zajdzie potrzeba.  
-4. Notuj swoje obliczenia w dostępnym polu rysunkowym.  
-5. Sprawdzaj swoje postępy, wybierając poprawne odpowiedzi.
+1. Pobierz projekt: Sklonuj repozytorium lub pobierz paczkę ZIP z projektem.
+2. Uruchom XAMPP.
+3. Włącz serwer Apache i MySQL w panelu XAMPP.
+4. Zainstaluj bazę danych do phpmyadmin pod nazwą "matura".
+5. Umieść folder projektu w katalogu htdocs.
+3. Uruchom aplikację w przeglądarce: Otwórz przeglądarkę i przejdź pod adres: http://localhost/nazwa_katalog_projektu
 
 <h2>Zrzut ekranu</h2>
 
@@ -49,12 +49,12 @@ Zadanie przykładowe:
 <h2>Technologie</h2>
 
 Strona została zaprojektowana z użyciem:  
-- HTML, CSS, JavaScript  
+- HTML, CSS, JavaScript, PHP  
 - Frameworków interaktywnych do wizualizacji matematycznej  
 - Bibliotek wspierających grafikę i notowanie  
 
 <h2>Kontakt</h2>
 
-Jeśli masz pytania lub sugestie, skontaktuj się z nami:  
+Jeśli masz pytania lub sugestie, skontaktuj się ze mną:  
 **E-mail:** kontakt@ezmaturka.pl  
-**Strona:** [EzMaturka](https://www.ezmaturka.pl)  
+**Github:** Proxuu  
