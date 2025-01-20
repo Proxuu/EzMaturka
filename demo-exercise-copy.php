@@ -1,8 +1,20 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+session_start();
+
+
+if (!isset($_SESSION['user_id'])) {
+
+    
+
+}else{
+    header("Location: main-exercise.php");
 }
+
+
+
+
 include("config.php");
+
 
 $id = isset($_POST['id']) ? intval($_POST['id']) : 1;
 
@@ -25,7 +37,7 @@ $result = $stmt->get_result();
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://kit.fontawesome.com/0bb67eac8a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="buttons_main.js" defer></script>
+    <script src="buttons.js" defer></script>
     <script src="canvas.js" defer></script>
     <script src="script.js" defer></script>
 </head>
@@ -37,15 +49,15 @@ $result = $stmt->get_result();
             <div id="category-box">
                 <table>
                     <tr id="cell-box">
-                        <td class="cell" data-dzial="Liczby i zbiory" id="dzial-1">Liczby i zbiory</td>
-                        <td class="cell" data-dzial="Funkcje" id="dzial-2">Funkcje</td>
-                        <td class="cell" data-dzial="Trygonometria" id="dzial-3">Trygonometria</td>
-                        <td class="cell" data-dzial="Ciągi" id="dzial-4">Ciągi</td>
-                        <td class="cell" data-dzial="Geometria analityczna" id="dzial-5">Geometria analityczna</td>
-                        <td class="cell" data-dzial="Planimetria" id="dzial-6">Planimetria</td>
-                        <td class="cell" data-dzial="Stereometria" id="dzial-7">Stereometria</td>
-                        <td class="cell" data-dzial="Rachunek prawdopodobieństwa" id="dzial-8">Rachunek prawdopodobieństwa</td>
-                        <td class="cell" data-dzial="Statystyka" id="dzial-9">Statystyka</td>
+                        <td class="cell">Liczby i zbiory</td>
+                        <td class="cell">Funkcje</td>
+                        <td class="cell">Trygonometria</td>
+                        <td class="cell">Ciągi</td>
+                        <td class="cell">Geometria analityczna</td>
+                        <td class="cell">Planimetria</td>
+                        <td class="cell">Stereometria</td>
+                        <td class="cell">Rachunek prawdopodobieństwa</td>
+                        <td class="cell">Statystyka</td>
                     </tr>
                 </table>
             </div>
@@ -63,18 +75,17 @@ $result = $stmt->get_result();
                         <tr>
                             <td class="ham-cell"><a class="link" href="index.php">Strona główna</a></td>
                         </tr>
-                        
                     </table>
                     <table id="table">
-                        <tr><td class="ham-cell" data-dzial="Liczby i zbiory">Liczby i zbiory</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Funkcje">Funkcje</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Trygonometria">Trygonometria</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Ciągi">Ciągi</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Geometria analityczna">Geometria analityczna</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Planimetria">Planimetria</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Stereometria">Stereometria</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Rachunek prawdopodobieństwa">Rachunek prawdopodobieństwa</td></tr>
-                        <tr><td class="ham-cell" data-dzial="Statystyka">Statystyka</td></tr>
+                        <tr><td class="ham-cell">Liczby i zbiory</td></tr>
+                        <tr><td class="ham-cell">Funkcje</td></tr>
+                        <tr><td class="ham-cell">Trygonometria</td></tr>
+                        <tr><td class="ham-cell">Ciągi</td></tr>
+                        <tr><td class="ham-cell">Geometria analityczna</td></tr>
+                        <tr><td class="ham-cell">Planimetria</td></tr>
+                        <tr><td class="ham-cell">Stereometria</td></tr>
+                        <tr><td class="ham-cell">Rachunek prawdopodobieństwa</td></tr>
+                        <tr><td class="ham-cell">Statystyka</td></tr>
                     </table>
                     <table id="logout-table">
 
@@ -99,6 +110,7 @@ $result = $stmt->get_result();
                 echo "Brak danych dla wybranego id.";
             }
         ?>
+
             <div id="content"></div>
             <div id="buttons">
                 <div class="button" id="answer">Odpowiedź</div>
@@ -138,15 +150,17 @@ $result = $stmt->get_result();
             </div>
         </div>
     </main>
+    
     <footer>
         <div id="footer">
-
         <p id="footer-desc" >&copy; 2025 ezMaturka. Wszystkie prawa zastrzeżone.</p>
+
         </div>
     </footer>
     <?php
     $stmt->close();
     $conn->close();
     ?>
+    
 </body>
 </html>
