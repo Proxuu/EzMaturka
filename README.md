@@ -49,9 +49,12 @@ Zadanie przykładowe:
 <h2>Technologie</h2>
 
 Strona została zaprojektowana z użyciem:  
-- HTML, CSS, JavaScript, PHP  
-- Frameworków interaktywnych do wizualizacji matematycznej  
-- Bibliotek wspierających grafikę i notowanie  
+- HTML, CSS, JavaScript, PHP
+
+- **Bibliotek:**  
+- MathJax
+- Font Awesome
+- JQuery
 
 <h2>Kontakt</h2>
 
