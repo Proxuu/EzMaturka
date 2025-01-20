@@ -51,7 +51,7 @@ Zadanie przykładowe:
 Strona została zaprojektowana z użyciem:  
 - HTML, CSS, JavaScript, PHP
 
-- **Bibliotek:**  
+Bibliotek:  
 - MathJax
 - Font Awesome
 - JQuery
