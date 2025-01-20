@@ -49,7 +49,7 @@ Zadanie przykładowe:
 <h2>Technologie</h2>
 
 Strona została zaprojektowana z użyciem:  
-- HTML, CSS, JavaScript, PHP
+- HTML, CSS, JavaScript, PHP, MySQL
 
 Bibliotek:  
 - MathJax
