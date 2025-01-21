@@ -61,6 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div id="login-form-box">
                 <form id="login-form" method="post">
+                        <p>Testowe konto:<br/>
+                        Email: test@gmail.com<br>
+                        hasło: Test1234</p>
                         <h3>E-mail</h3>
                         <input class="login-inputs" type="email" name="username" placeholder="Twój email" maxlength="30" required><br>
                         <span class="error"><?php echo $username_err; ?></span><br>
