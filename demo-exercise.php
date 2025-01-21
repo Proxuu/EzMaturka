@@ -2,6 +2,11 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
 include("config.php");
 
 $id = isset($_POST['id']) ? intval($_POST['id']) : 1;

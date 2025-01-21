@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input class="login-inputs" type="password" name="password" placeholder="Twoje hasło" maxlength="20" required><br>
                         <span class="error"><?php echo $password_err; ?></span><br>
                         <span class="error"><?php echo $login_err; ?></span><br>
-                        <a class="link" href="reset_password.php">Nie pamiętam hasła</a><br><br>
+                        <a class="link" href="reset_password.html">Nie pamiętam hasła</a><br><br>
                         <a class="link" href="signup.php">Nie mam jeszcze konta</a><br>
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input class="submit" type="submit" value="Zaloguj">
